@@ -1,6 +1,6 @@
 # openvpn-with-stunnel
 System requirment
-Debian 11 Or Ubunto 20 (Ubuntu recommended)
+Debian 11 Or Ubuntu 20 (Ubuntu recommended)
 
 ## Install Upstream Server ##
 1 - Copy And Run command below
