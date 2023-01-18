@@ -12,7 +12,7 @@ read -rp "Fake TLS Domain (SNI) (Default : $fake_tls_sni) : " -e -i "$fake_tls_s
 apt install stunnel4 -y
 cd /etc/stunnel/
 curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/stunnel-bridge.conf
-mv stunnel-upstream.conf stunnel.conf
+mv stunnel-bridge.conf stunnel.conf
 sed -i 's/openvpn_port/'$openvpn_port'/' stunnel.conf
 sed -i 's/upstream_port/'$upstream_port'/' stunnel.conf
 sed -i 's/upstream_ip/'$upstream_ip'/' stunnel.conf
