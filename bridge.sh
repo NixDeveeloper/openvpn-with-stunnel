@@ -19,7 +19,7 @@ sed -i 's/upstream_ip/'$upstream_ip'/' stunnel.conf
 sed -i 's/fake_tls_sni/'$fake_tls_sni'/' stunnel.conf
 /etc/init.d/stunnel4 restart
 echo "###################################"
-echo "Everything is ok . copy openvpn config file from upstream server"
+echo "Everything is ok . copy openvpn config file from upstream server to your pc"
 echo "1 - Edit ovpn file"
 echo "2 - replace tcp-client to tcp"
 echo "3 - replace remote ip to your bridge ip"
