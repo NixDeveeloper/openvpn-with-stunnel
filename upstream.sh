@@ -19,7 +19,8 @@ sed -i 's/tunnel_port/'$tunnel_port'/' stunnel.conf
 openssl genrsa -out key.pem 2048
 openssl req -new -x509 -key key.pem -out cert.pem -days 3650
 /etc/init.d/stunnel4 restart
-curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/openvpn-install.sh && chmod +x openvpn-install.sh && ./openvpn-install.sh
+curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/openvpn-install.sh
+bash openvpn-install.sh
 echo "###################################"
 echo "Everything is ok . copy ovpn file from /root to your pc"
 echo "Config your bridge server"
