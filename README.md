@@ -1,4 +1,4 @@
-# openvpn-with-stunnel
+# Config OpenVPN With Stunnel (Tunneling between two servers)
 System requirment
 Debian 11 Or Ubuntu 20 (Ubuntu recommended)
 
