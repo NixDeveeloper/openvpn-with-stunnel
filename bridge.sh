@@ -1,6 +1,5 @@
-apt update
-apt install curl -y
-apt install sudo -y
+sudo apt update
+sudo apt install curl -y
 openvpn_port="1194"
 upstream_port="443"
 upstream_ip="127.0.0.1"
@@ -9,15 +8,15 @@ read -rp "OpenVpn Port (Default : $openvpn_port) : " -e -i "$openvpn_port" openv
 read -rp "Upstream Port (Default : $upstream_port) : " -e -i "$upstream_port" upstream_port
 read -rp "Upstream IP : " -e -i "$upstream_ip" upstream_ip
 read -rp "Fake TLS Domain (SNI) (Default : $fake_tls_sni) : " -e -i "$fake_tls_sni" fake_tls_sni
-apt install stunnel4 -y
+sudo apt install stunnel4 -y
 cd /etc/stunnel/
-curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/stunnel-bridge.conf
-mv stunnel-bridge.conf stunnel.conf
-sed -i 's/openvpn_port/'$openvpn_port'/' stunnel.conf
-sed -i 's/upstream_port/'$upstream_port'/' stunnel.conf
-sed -i 's/upstream_ip/'$upstream_ip'/' stunnel.conf
-sed -i 's/fake_tls_sni/'$fake_tls_sni'/' stunnel.conf
-/etc/init.d/stunnel4 restart
+sudo curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/stunnel-bridge.conf
+sudo mv stunnel-bridge.conf stunnel.conf
+sudo sed -i 's/openvpn_port/'$openvpn_port'/' stunnel.conf
+sudo sed -i 's/upstream_port/'$upstream_port'/' stunnel.conf
+sudo sed -i 's/upstream_ip/'$upstream_ip'/' stunnel.conf
+sudo sed -i 's/fake_tls_sni/'$fake_tls_sni'/' stunnel.conf
+sudo /etc/init.d/stunnel4 restart
 echo "###################################"
 echo "Everything is ok . copy openvpn config file from upstream server to your pc"
 echo "1 - Edit ovpn file"
