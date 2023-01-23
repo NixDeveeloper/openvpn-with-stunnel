@@ -8,7 +8,7 @@ Debian 11 Or Ubuntu 20 (Ubuntu recommended)
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/upstream.sh)
 ```
-** Attention : Use TCP protocol for openvpn . each config file can use for one device so if you want create other user run command below on your upstream server
+** Attention : Use TCP protocol for openvpn . each config file can use for one device so if you want create other user run command below in your upstream server
 ```
 bash openvpn-install.sh
 ```
