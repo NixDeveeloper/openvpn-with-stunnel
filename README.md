@@ -1,6 +1,10 @@
 # OpenVPN With Stunnel (Tunneling between two servers)
-System requirment
-Debian 11 Or Ubuntu 20 (Ubuntu recommended)
+## System requirment ##
+Cpu 1core
+<br>
+Ram 2GB
+<br>
+Os Debian 11 / Ubuntu 20 (Recommended)
 
 ## Install Upstream Server ##
 1 - Copy And Run command below
