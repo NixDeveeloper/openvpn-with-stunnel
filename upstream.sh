@@ -12,14 +12,14 @@ EOF
 sysctl -p /etc/sysctl.d/50-bbr.conf
 apt install stunnel4 -y
 cd /etc/stunnel/
-curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/stunnel-upstream.conf
+wget https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/stunnel-upstream.conf
 mv stunnel-upstream.conf stunnel.conf
 sed -i 's/openvpn_port/'$openvpn_port'/' stunnel.conf
 sed -i 's/tunnel_port/'$tunnel_port'/' stunnel.conf
 openssl genrsa -out key.pem 2048
 openssl req -new -x509 -key key.pem -out cert.pem -days 3650
 /etc/init.d/stunnel4 restart
-curl -O https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/openvpn-install.sh
+wget https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/openvpn-install.sh
 bash openvpn-install.sh
 systemctl restart openvpn@server
 echo "###################################"
