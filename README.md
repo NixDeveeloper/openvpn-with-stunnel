@@ -41,5 +41,5 @@ apt update && apt install sudo -y && apt install curl -y && bash <(curl -Ls http
 
 ## Donate ##
 ```
-USDT-TRC20 : TKtUR5kcHRWje8GUnAVZLeb5MA2pRSWJi7
+USDT-TRC20 : TQgcPnNfMP4HvTnyUttusoD5egcHZacBcZ
 ```
