@@ -1,5 +1,4 @@
-sudo apt update
-sudo apt install curl -y
+sudo apt install wget -y
 openvpn_port="1194"
 upstream_port="443"
 upstream_ip="127.0.0.1"

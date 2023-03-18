@@ -1,5 +1,6 @@
 apt update
 apt install sudo -y
+apt install wget -y
 apt install curl -y
 openvpn_port="1194"
 tunnel_port="443"
