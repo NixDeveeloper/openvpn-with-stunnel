@@ -39,6 +39,5 @@ apt update && apt install sudo -y && apt install curl -y && bash <(curl -Ls http
 ## Donate ##
 ```
 USDT-TRC20 : THeed4iF4KdvXtcUXoQCNqZfafdgsjeLoc
-<br>
 BNB-BSC(BEP20) : 0x543e7d7Ac2365585D0774016c3636163C9CA3ae6
 ```
