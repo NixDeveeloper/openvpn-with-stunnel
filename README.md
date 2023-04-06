@@ -10,7 +10,7 @@ Os Debian 11 / Ubuntu 20 (Recommended)
 1 - Copy And Run command below
 <br>
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/upstream.sh)
+apt update && apt install -y curl && bash <(curl -Ls https://raw.githubusercontent.com/NixDeveeloper/openvpn-with-stunnel/master/upstream.sh)
 ```
 ** Attention : Use TCP protocol for openvpn . ovpn config file are multi-user.
 
